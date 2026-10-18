@@ -7,23 +7,13 @@
  *
  * Copyright (C) 2026 Herlyn. All rights reserved.
  */
-#include "herlyn/core.h"
+#include "wangyonglin/string.h"
 #include <stdio.h>
 
 int main(void)
 {
-    // 裸机 Cortex-M 程序：main 一般永不返回
+
     HL_StatusDef ret;
-    printf("hy  HerlynOS\r\n");
-    // 在这里放系统初始化
-
-
-    // 主循环
-    // while(1)
-    // {
-    //     HerlynOS_Run();
-    // }
-
-    // 理论不会执行到这里
+    printf("HerlynOS\r\n");
     return 0;
 }

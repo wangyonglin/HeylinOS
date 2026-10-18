@@ -1,5 +1,5 @@
-#ifndef __KERNEL_DEFS_H__
-#define __KERNEL_DEFS_H__
+#ifndef __WANGYONGLIN_DEFS_H__
+#define __WANGYONGLIN_DEFS_H__
 
 /**
  * @brief 平台掩码定义

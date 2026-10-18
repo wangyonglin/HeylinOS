@@ -1,9 +1,8 @@
-#ifndef __KERNEL_STRING_H__
-#define __KERNEL_STRING_H__
+#ifndef __WANGYONGLIN_STRING_H__
+#define __WANGYONGLIN_STRING_H__
 
-#include "heylin/kernel/lib.h"
+#include "wangyonglin/lib.h"
 #include <stdint.h>
-
 
 
 
@@ -59,4 +58,4 @@ typedef uint16_t HL_ColorDef;
 
 
 
-#endif /* __HERLYN_STRING_H__ */
+#endif /* __WANGYONGLIN_STRING_H__ */
