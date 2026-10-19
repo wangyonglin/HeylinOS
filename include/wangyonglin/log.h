@@ -48,6 +48,12 @@ void HL_LOG_FPUTC(HL_StringDef file, HL_UInt32Def line, HL_StringDef fmt, ...);
  * @param ... 参数
  */
 #define LOG_INFO(fmt, ...)  HL_LOG_FPUTC(__FILE__, (HL_UInt32Def)__LINE__, fmt, ##__VA_ARGS__)
+#define LOG_ERROR(fmt, ...) HL_LOG_FPUTC(__FILE__, (HL_UInt32Def)__LINE__, "[ERROR] " fmt, ##__VA_ARGS__)
+#if HL_USE_DEBUG
+#define LOG_DEBUG(fmt, ...) HL_LOG_FPUTC(__FILE__, (HL_UInt32Def)__LINE__, "[DEBUG] " fmt, ##__VA_ARGS__)
+#else
+#define LOG_DEBUG(fmt, ...) do{}while(0)
+#endif
 
 #ifdef __cplusplus
 }
