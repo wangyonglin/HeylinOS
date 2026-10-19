@@ -39,8 +39,8 @@ typedef float              HL_Float32Def;
 typedef double             HL_Float64Def;
 
 /* 字符串 (和标准库兼容) */
-typedef char        HL_CharDef;
-typedef char*       HL_StringDef;
+typedef char               HL_CharDef;
+typedef const char*        HL_StringDef;
 
 
 /* 布尔类型，统一风格：unsigned char */

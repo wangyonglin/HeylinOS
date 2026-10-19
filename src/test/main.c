@@ -8,12 +8,21 @@
  * Copyright (C) 2026 Herlyn. All rights reserved.
  */
 #include "wangyonglin/string.h"
+#include "wangyonglin/log.h"
+#include "wangyonglin/assent.h"
 #include <stdio.h>
 
+void HL_LOG_Handler(const HL_UInt8Def * data,HL_UInt16Def size){
+    printf("HerlynOS:%s\r\n",data);
+}
 int main(void)
 {
 
     HL_StatusDef ret;
-    printf("HerlynOS\r\n");
+
+    LOG_INFO("wangyonglin ok");
+    ASSENT(NULL);
+    ASSERT(NULL);
+    LOG_INFO("HerlynOS\r\n");
     return 0;
 }

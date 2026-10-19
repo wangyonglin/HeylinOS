@@ -6,9 +6,12 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 # 全局头文件根目录
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
+
+
 # ========== 平台无关源码 ==========
 
 set(HER_TEST_SRCS
+    src/wangyonglin/log.c
     src/test/main.c
 )
 
@@ -34,7 +37,10 @@ set(HER_TEST_SRCS
 
 if(HER_PLATFORM STREQUAL "WIN32")
     message(STATUS "Build: Win32 PC Simulation")
-    add_executable(herlyn_test 
+    add_compile_definitions(HL_USE_DEBUG)
+    add_executable(herlyn_test
+    src/wangyonglin/assent.c
+    src/wangyonglin/log.c
     src/test/main.c
     )
     target_include_directories(herlyn_test PRIVATE
