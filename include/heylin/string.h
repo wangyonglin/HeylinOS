@@ -1,7 +1,7 @@
 #ifndef __WANGYONGLIN_STRING_H__
 #define __WANGYONGLIN_STRING_H__
 
-#include "wangyonglin/lib.h"
+#include "heylin/lib.h"
 #include <stdint.h>
 
 

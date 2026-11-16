@@ -57,4 +57,18 @@ typedef signed char        HL_StatusDef;
 #define Enabled          	    HL_TRUE
 #define Disabled                HL_FALSE
 
+
+// 跨编译器弱符号宏
+#if defined(__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)
+// Keil ARM Compiler 6 (ARMCLANG)
+#define __hl_weak __attribute__((weak))
+#elif defined(__CC_ARM)
+// Keil ARM Compiler 5
+#define __hl_weak __weak
+#elif defined(__GNUC__)
+#define __hl_weak __attribute__((weak))
+#else
+#define __hl_weak
+#endif
+
 #endif /* __KERNEL_DEFS_H__ */

@@ -7,9 +7,9 @@
  *
  * Copyright (C) 2026 Herlyn. All rights reserved.
  */
-#include "wangyonglin/string.h"
-#include "wangyonglin/log.h"
-#include "wangyonglin/assent.h"
+#include "heylin/string.h"
+#include "heylin/log.h"
+#include "heylin/assent.h"
 #include <stdio.h>
 
 void HL_LOG_Handler(const HL_UInt8Def * data,HL_UInt16Def size){

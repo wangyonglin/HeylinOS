@@ -10,7 +10,7 @@
 #ifndef __WANGYONGLIN_LOG_H__
 #define __WANGYONGLIN_LOG_H__
 
-#include "wangyonglin/string.h"
+#include "heylin/string.h"
 
 
 #ifdef __cplusplus
